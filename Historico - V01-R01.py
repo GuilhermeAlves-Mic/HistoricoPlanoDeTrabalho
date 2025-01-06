@@ -351,7 +351,7 @@ def carregar_dados():
 def salvar_historico_na_planilha(df_novo):
     # Caminho para a área de trabalho
     area_de_trabalho = os.path.join(os.path.expanduser('~'), 'Desktop')
-    nome_arquivo = os.path.join(area_de_trabalho, 'historico_horas_planejadas.xlsx')
+    nome_arquivo = os.path.join(area_de_trabalho, 'Teste_Horas_Planejadas.xlsx')
 
     # Adicionar uma coluna com a data de registro
     df_novo['Data de Registro'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -407,3 +407,5 @@ if __name__ == "__main__":
         salvar_historico_na_planilha(df_horas_planejadas)
     else:
         print("Nenhum dado encontrado para salvar.")
+
+#Teste Git VSCode
